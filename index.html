@@ -9,6 +9,8 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
         h1 {
             font-size: 3em;
@@ -28,9 +30,58 @@
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s;
+            cursor: pointer;
         }
         .button:hover {
             background-color: #0056b3;
+        }
+        .content-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        #acerca {
+            width: 45%;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .profile-container {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+        .profile-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .profile-card img {
+            width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .profile-card h3 {
+            margin: 10px 0;
+        }
+        .profile-card p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -39,8 +90,42 @@
     <div class="button-container">
         <a href="https://github.com/luiss14" class="button">GitHub</a>
         <a href="https://www.youtube.com/@clownyzot" class="button">Tutorial</a>
-        <a href="#" class="button" onclick="alert('Somos SALA 4 proyecto \"cajero\", este simula el cobro a un cliente en una tienda la bendición y no solo simula también está para descargar el código y poder que todos tengan la posibilidad de tener el cajero con su base de datos')">Acerca de</a>
+        <a href="#acerca" class="button">Acerca de</a>
         <a href="https://docs.google.com/document/d/1eF1BXhkGohudhiGePXek9fOZzT-Mxn-xVbsgBeyS7FE/edit?usp=drivesdk" class="button">Instrucciones</a>
+    </div>
+    <div class="content-container">
+        <div id="acerca">
+            <h2>Acerca de</h2>
+            <p>Somos SALA 4 proyecto "cajero", este simula el cobro a un cliente en una tienda la bendición y no solo simula también está para descargar el código y poder que todos tengan la posibilidad de tener el cajero con su base de datos.</p>
+        </div>
+        <div id="perfiles" class="profile-container">
+            <h2>Perfiles</h2>
+            <div class="profile-card">
+                <img src="images/luis.jpg" alt="Luis Sebastian Ramirez Garcia">
+                <h3>Luis Sebastian Ramirez Garcia</h3>
+                <p>Edad: 16</p>
+            </div>
+            <div class="profile-card">
+                <img src="images/henry.jpg" alt="Henry Eleonay Bran Esquivel">
+                <h3>Henry Eleonay Bran Esquivel</h3>
+                <p>Edad: 17</p>
+            </div>
+            <div class="profile-card">
+                <img src="images/jefferson.jpg" alt="Jefferson Ciriaco Espinoza Covox">
+                <h3>Jefferson Ciriaco Espinoza Covox</h3>
+                <p>Edad: 16</p>
+            </div>
+            <div class="profile-card">
+                <img src="images/miguel.jpg" alt="Miguel Angel Mendez Soza">
+                <h3>Miguel Angel Mendez Soza</h3>
+                <p>Edad: 21</p>
+            </div>
+            <div class="profile-card">
+                <img src="images/vilma.jpg" alt="Vilma Yamileth Chan Perez">
+                <h3>Vilma Yamileth Chan Perez</h3>
+                <p>Edad: (No especificado)</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
